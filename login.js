@@ -30,23 +30,7 @@ dots.forEach((dot, key) => { // Corrected variable name 'li' to 'dot', and added
 function autoSlide() {
     // Incrementing active index
     active = (active === lengthItem) ? 0 : active + 1;
-
-    // If active is at the end, slide the last image to the left
-    if (active === 0) {
-        // Disable transition to prevent animation
-        list.style.transition = 'none';
-        // Move the slider to the left (back to the first image)
-        list.style.left = '0';
-        // Re-enable transition for smooth animation
-        setTimeout(() => {
-            list.style.transition = '';
-            // Set active index to 1 to show the second image after animation
-            active = 1;
-            reloadSlider();
-        });
-    } else {
-        reloadSlider(); // Reload slider to update active image
-    }
+    reloadSlider();
 
     // Setting timeout for next slide
     setTimeout(autoSlide, 3000); // Change 3000 to adjust slide duration (in milliseconds)
@@ -54,5 +38,3 @@ function autoSlide() {
 
 // Starting automatic slider
 autoSlide();
-
-
