@@ -10,6 +10,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/login.css">
   <link rel="icon" href="assets/img/logo.png">
+  <style>
+    .or-text {
+      text-align: center;
+      margin-top: 10px; /* Điều chỉnh khoảng cách giữa button và "or" */
+    }
+  </style>
 </head>
 <body>
   <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
@@ -49,17 +55,23 @@
                     <label for="email" class="sr-only">Email</label>
                     <input type="email" name="email" id="email" class="form-control" placeholder="Email address">
                   </div>
-                  <div class="form-group mb-4">
+                  <div class="form-group mb-6">
                     <label for="password" class="sr-only">Password</label>
-                    <input type="password" name="password" id="password" class="form-control" placeholder="">
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password">
                   </div>
-                  <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
+                  <input name="login" id="login" class="btn btn-block login-btn mb-" type="button" value="Login">
+                  <a href="#!" class="forgot-password-link">Forgot password?</a>
+                  <p class="login-card-footer-text">Don't have an account? <a href="#!" class="text-reset">Register here</a></p>
+
+                  <div class="hr display-1">
+                    <hr>
+                    <div class="or-text">or</div>
+                  </div>
                 </form>
-                <a href="#!" class="forgot-password-link">Forgot password?</a>
-                <p class="login-card-footer-text">Don't have an account? <a href="#!" class="text-reset">Register here</a></p>
+                
                 <nav class="login-card-footer-nav">
                   <a href="#!" class="a">Terms of use.</a>
-                  <a href="#!">Privacy policy</p></a>
+                  <a href="#!">Privacy policy</a>
                 </nav>
             </div>
           </div>
