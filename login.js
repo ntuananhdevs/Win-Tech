@@ -38,3 +38,32 @@ function autoSlide() {
 
 // Starting automatic slider
 autoSlide();
+
+// Optional: Nếu bạn muốn tạo animation chậm hơn, hãy sử dụng setInterval và thay đổi từng màu một
+// const winTech = document.getElementById('winTech');
+// const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+// let index = 0;
+
+// setInterval(() => {
+//   winTech.style.color = colors[index];
+//   index = (index + 1) % colors.length;
+// }, 1000); // Thay đổi màu mỗi giây
+
+// const spans = document.querySelectorAll('.brand-text span');
+
+// // Thay đổi màu cho mỗi chữ
+// spans.forEach((span, index) => {
+//   setInterval(() => {
+//     const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink', 'brown'];
+//     span.style.color = colors[index % colors.length];
+//   }, 1000); // Thay đổi màu mỗi giây
+// });
+const spans = document.querySelectorAll('.brand-text span');
+const delay = 0.1; // Thời gian delay giữa mỗi chữ
+
+// Thêm animation-delay cho mỗi chữ
+spans.forEach((span, index) => {
+  span.style.setProperty('--animation-delay', `${index * delay}s`);
+});
+
+

@@ -97,12 +97,14 @@ body {
   font-weight: bold;
   line-height: 30px;
   color: #fff;
+  box-shadow: none;
 }
 
 .login-card .login-btn:hover {
   border: 1px solid #000;
-  background-color: transparent;
-  color: #000;
+  background-color: #8a8c8e;
+  color: #fbf3f3;
+  box-shadow: none;
 }
 
 
@@ -168,8 +170,8 @@ body {
   width: 100%;
 }
 .login-card-footer-nav {
-  text-align: left; /* Căn chữ sang phải */
-  margin-left: 50px;
+  text-align: right; /* Căn chữ sang phải */
+  margin-right: 50px;
 }
 /* slide show */
   .slider{
@@ -178,6 +180,7 @@ body {
     border-radius: 90px;
     margin: 30px 0 30px 30px;
     width: 100%;
+    box-shadow: #919aa3 20px 10px 10px;
   }
 .list{
   position: absolute;
@@ -229,5 +232,173 @@ body {
   background-color: white; /* Đặt màu nền cho "or" */
   padding: 0 10px; /* Điều chỉnh padding */
 }
+.btn{
+  line-height: 50px;
+  width: 90px;
+
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.or-text {
+  text-align: center;
+  margin-top: 10px; /* Điều chỉnh khoảng cách giữa button và "or" */
+}
+.or-login{
+  display: flex;
+  gap: 50px;
+}
+ion-icon {
+  font-size: 30px;
+  padding-top: 15px;
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-items: center;
+  justify-items: center;
+  align-items: center;
+  color: rgb(0, 0, 0)
+}
+.icon-login{
+  border-radius: 20px;
+  background-color: rgb(242, 242, 242);
+  border: none;
+}
+.icon-login:hover{
+  border-radius: 20px;
+  background-color: rgb(173, 173, 173);
+  border: none;
+  box-shadow: #bdbebf 10px 6px 20px;
+  transition: 1s;
+
+}
 
 
+.form-control {
+  transition: border-color 0.5s ease; /* Tạo hiệu ứng chuyển đổi cho màu viền */
+  border-color: rgba(0, 0, 0, 0.1); /* Màu viền ban đầu */
+}
+
+.form-control:focus {
+  border-color: #e25f5f; /* Màu viền khi được chọn */
+  box-shadow: none; /* Loại bỏ hiệu ứng bóng đổ */
+}
+.form-control {
+  font-family: Serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.form-control:focus {
+  font-family: Serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+.brand-text {
+  font-size: 40px;
+}
+
+/* Các class để xác định màu cho mỗi chữ */
+.brand-text span:nth-child(1) {
+  animation: changeColor3 5s infinite; /* Animation cho chữ thứ nhất */
+}
+
+.brand-text span:nth-child(2) {
+  animation: changeColor3 5.2s infinite; /* Animation cho chữ thứ hai */
+}
+.brand-text span:nth-child(3) {
+  animation: changeColor3 5.4s infinite; /* Animation cho chữ thứ hai */
+}
+.brand-text span:nth-child(4) {
+  animation: changeColor3 5.6s infinite; /* Animation cho chữ thứ hai */
+}
+.brand-text span:nth-child(5) {
+  animation: changeColor3 5.6s infinite; /* Animation cho chữ thứ hai */
+}
+.brand-text span:nth-child(6) {
+  animation: changeColor3 5.8s infinite; /* Animation cho chữ thứ hai */
+}
+.brand-text span:nth-child(7) {
+  animation: changeColor3 6.0s infinite; /* Animation cho chữ thứ hai */
+}
+.brand-text span:nth-child(8) {
+  animation: changeColor3 6.2s infinite; /* Animation cho chữ thứ hai */
+}
+/* Các animation cho mỗi chữ */
+@keyframes changeColor1 {
+  0% { color: red; }
+  16.666% { color: orange; }
+  33.333% { color: yellow; }
+  50% { color: green; }
+  66.666% { color: blue; }
+  83.333% { color: purple; }
+  100% { color: pink; }
+}
+
+@keyframes changeColor2 {
+  0% { color: pink; }
+  16.666% { color: red; }
+  33.333% { color: orange; }
+  50% { color: yellow; }
+  66.666% { color: green; }
+  83.333% { color: rgb(145, 211, 46); }
+  100% { color: rgb(35, 168, 201); }
+}
+@keyframes changeColor3 {
+  0% { color: pink; }
+  16.666% { color: red; }
+  33.333% { color: orange; }
+  50% { color: yellow; }
+  66.666% { color: green; }
+  83.333% { color: rgb(145, 211, 46); }
+  100% { color: rgb(35, 168, 201); }
+}
+@keyframes changeColor4 {
+  0% { color: pink; }
+  16.666% { color: red; }
+  33.333% { color: orange; }
+  50% { color: yellow; }
+  66.666% { color: green; }
+  83.333% { color: rgb(145, 211, 46); }
+  100% { color: rgb(35, 168, 201); }
+}
+@keyframes changeColor5 {
+  0% { color: pink; }
+  16.666% { color: red; }
+  33.333% { color: orange; }
+  50% { color: yellow; }
+  66.666% { color: green; }
+  83.333% { color: rgb(145, 211, 46); }
+  100% { color: rgb(35, 168, 201); }
+}
+@keyframes changeColor6 {
+  0% { color: pink; }
+  16.666% { color: red; }
+  33.333% { color: orange; }
+  50% { color: yellow; }
+  66.666% { color: green; }
+  83.333% { color: rgb(145, 211, 46); }
+  100% { color: rgb(35, 168, 201); }
+}
+@keyframes changeColor7 {
+  0% { color: pink; }
+  16.666% { color: red; }
+  33.333% { color: orange; }
+  50% { color: yellow; }
+  66.666% { color: green; }
+  83.333% { color: rgb(145, 211, 46); }
+  100% { color: rgb(35, 168, 201); }
+}
+@keyframes changeColor8 {
+  0% { color: pink; }
+  16.666% { color: red; }
+  33.333% { color: orange; }
+  50% { color: yellow; }
+  66.666% { color: green; }
+  83.333% { color: rgb(145, 211, 46); }
+  100% { color: rgb(35, 168, 201); }
+}
