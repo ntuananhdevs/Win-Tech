@@ -402,7 +402,3 @@ ion-icon {
   color: #000;
 }
 
-.link-text-home.active {
-  color: blue; /* Đổi màu chữ */
-  font-weight: bold; /* In đậm */
-}
