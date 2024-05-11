@@ -400,5 +400,12 @@ ion-icon {
 ion-icon {
   font-size: 25px;
   color: #000;
+  --ionicon-stroke-width: 46px; 
+}
+.active {
+  background-color: #fff; /* Màu nền trắng */
+  color: #000; /* Màu chữ đen */
+  border-radius: 5px; /* Đường viền cong */
+  padding: 5px 10px; /* Khoảng cách bên trong */
 }
 
