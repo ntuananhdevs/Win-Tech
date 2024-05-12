@@ -29,6 +29,7 @@
             background-color: #000; /* Màu nền đen */
             color: #fff; /* Màu chữ trắng */
             transition: 1s;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         .active {
             background-color: #000000; /* Màu nền trắng */
@@ -38,20 +39,33 @@
             font-weight: bold;
             border-radius: 20px;
         }
+        @media (min-aspect-ratio: 16/9){
+    .video11{
+        width: 100%;
+        height: auto;
+    }
+}
     </style>
 </head>
 <body class="bg-slate-300">
-    <div class="nav-home" id="nav">
+    <div>
+        <div class="video11 absolute right-0 bottom-0 -z-1 ">
+            <video loop autoplay muted play-inside class="blur-xl">
+                <source src="img/wall.mp4">
+            </video>
+        </div>
+    </div>
+    <div class="nav-home shadow-2xl drop-shadow-2xl	" id="nav">
         <div class="logo-text">
             <a href="#"><img src="/assets/img/logo.png" alt="" class="logo"></a>
             <span>Win Tech</span>
         </div>
-        <div class="link-home">
-            <a href="#" class="link-text-home" id="home">Home</a>
-            <a href="#" class="link-text-home" id="product">Product</a>
-            <a href="#" class="link-text-home" id="service">Service</a>
-            <a href="#" class="link-text-home" id="trailer">Trailer</a>
-            <a href="#" class="link-text-home logout-home">Logout</a>
+        <div class="link-home hover:transition-all">
+            <a href="#" class="link-text-home transition duration-300 ease-in-out" id="home">Home</a>
+            <a href="#" class="link-text-home transition duration-300 ease-in-out" id="product">Product</a>
+            <a href="#" class="link-text-home transition duration-300 ease-in-out" id="service">Service</a>
+            <a href="#" class="link-text-home transition duration-300 ease-in-out" id="trailer">Trailer</a>
+            <a href="#" class="link-text-home logout-home transition duration-300 ease-in-out">Logout</a>
             <ion-icon id="moon-icon" name="moon-outline" class="link-text-home"></ion-icon>
         </div>
     </div>
@@ -117,7 +131,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center w-full h-auto bg-slate-800 m-0 p-10">
+        <div class="text-center w-full h-auto bg-slate-800 m-0 p-10 relative">
             <div class="flex items-center justify-center">
                 <h1 class="text-3xl font-bold text-white">SHOP NY THANG 5</h1>
                 <img class="w-20 mr-2" src="img/giphy.gif" alt="" srcset="">
