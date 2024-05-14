@@ -403,9 +403,9 @@ ion-icon {
   --ionicon-stroke-width: 46px; 
 }
 .active {
-  background-color: #fff; /* Màu nền trắng */
-  color: #000; /* Màu chữ đen */
-  border-radius: 5px; /* Đường viền cong */
-  padding: 5px 10px; /* Khoảng cách bên trong */
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px; 
+  padding: 5px 10px; 
 }
 
