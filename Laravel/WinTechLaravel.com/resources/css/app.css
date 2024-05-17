@@ -1,0 +1,462 @@
+/* CSS */
+body {
+    font-family:  sans-serif;
+    background-color: #d0d0ce;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .brand-wrapper {
+    margin-bottom: 19px;  margin-left: 50px;
+  }
+  
+  .brand-wrapper .logo {
+    height: 100%;
+  
+  }
+  
+  .login-card {
+    border: 0;
+    border-radius: 27.5px;
+    box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+    /* overflow: hidden; */
+  }
+  
+  .login-card-img {
+    /* border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 35px; */
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    /* padding: 30px 0 30px 0 ; */
+    width: 600px;
+  }
+  
+  .login-card .card-body {
+    padding: 85px 60px 60px;
+  }
+  
+  /* @media (max-width: 422px) {
+    .login-card .card-body {
+      padding: 35px 24px;
+    }
+  } */
+  
+  .login-card-description {
+    font-size: 25px;
+    color: #000;
+    font-weight: normal;
+    margin-bottom: 23px;
+    margin-left: 50px;
+  }
+  
+  .login-card form {
+    max-width: 500px;
+    margin-left: 50px;
+  }
+  
+  .login-card .form-control {
+    border: 3px solid #d5dae2;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    min-height: 55px;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: normal;
+    border-radius: 10px;
+  
+  }
+  
+  /* .login-card .form-control::-webkit-input-placeholder {
+    color: #919aa3;
+  }
+  
+  .login-card .form-control::-moz-placeholder {
+    color: #919aa3;
+  }
+  
+  .login-card .form-control:-ms-input-placeholder {
+    color: #919aa3;
+  }
+  
+  .login-card .form-control::-ms-input-placeholder {
+    color: #919aa3;
+  }
+  
+  .login-card .form-control::placeholder {
+    color: #919aa3;
+  } */
+  
+  /* button */
+  .login-card .login-btn {
+    padding: 13px 20px 12px;
+    background-color: #000;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #fff;
+    box-shadow: none;
+  }
+  
+  .login-card .login-btn:hover {
+    border: 1px solid #000;
+    background-color: #8a8c8e;
+    color: #fbf3f3;
+    box-shadow: none;
+    transition: 0.5s;
+  }
+  
+  
+  .login-card .forgot-password-link {
+    font-size: 14px;
+    color: #919aa3;
+    margin-top: 0;
+  }
+  
+  .login-card-footer-text {
+    font-size: 16px;
+    color: #0d2366;
+  }
+  
+  /* @media (max-width: 767px) {
+    .login-card-footer-text {
+      margin-bottom: 24px;
+    }
+  } */
+  
+  .login-card-footer-nav a {
+    font-size: 14px;
+    color: #919aa3;
+  
+  }
+  .content-login {
+    display: flex; 
+    width: 100%; 
+  }
+  
+  .img-login {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .form-login {
+    flex: 1;
+    max-width: 50%;
+  }
+  .img-login {
+    float: left; 
+    max-width: 50%;
+  }
+  
+  .form-login {
+    float: right; 
+    max-width: 50%;
+  }
+  .brand-container {
+    display: flex;
+    align-items: center; /* Căn chính giữa theo chiều dọc */
+  }
+  
+  .logo {
+    width: 100px;
+    margin-right: 10px; /* Khoảng cách giữa logo và chữ */
+  }
+  
+  .brand-text {
+    font-size: 30px; /* Kích thước của chữ "Win Tech" */
+    font-weight: bold;
+    font-family: 'Zapf-Chancery';
+    width: 100%;
+  }
+  .login-card-footer-nav {
+    text-align: right; /* Căn chữ sang phải */
+    margin-right: 50px;
+  }
+  /* slide show */
+    .slider{
+      position: relative;
+      overflow: hidden;
+      border-radius: 90px;
+      margin: 30px 0 30px 30px;
+      width: 100%;
+      box-shadow: #919aa3 20px 10px 10px;
+    }
+  .list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 2s;
+  }
+  .list img{
+    width: 600px;
+    max-width: 100vw;
+    height: 100%;
+  }
+  .dots{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    margin-left: 170px;
+    padding: 0;
+    display: flex;
+  }
+  .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+    display: flex;
+  }
+  .dots .active{
+    width: 50px;
+  }
+  
+  .hr {
+    text-align: center; /* Căn giữa */
+    position: relative; /* Cần thiết để áp dụng position absolute cho "or-text" */
+    font-size: 17px;
+  }
+  
+  .or-text {
+    position: absolute; /* Để nằm trên thanh hr */
+    top: -20px; /* Đặt vị trí "or" lùi lên 20px */
+    left: 50%; /* Căn vị trí "or" vào giữa */
+    transform: translateX(-50%); /* Dịch chuyển "or" lùi lại 50% của chính nó */
+    background-color: white; /* Đặt màu nền cho "or" */
+    padding: 0 10px; /* Điều chỉnh padding */
+  }
+  .btn{
+    line-height: 50px;
+    width: 90px;
+  
+  }
+  .divider:after,
+  .divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+  }
+  .or-text {
+    text-align: center;
+    margin-top: 10px; /* Điều chỉnh khoảng cách giữa button và "or" */
+  }
+  .or-login{
+    display: flex;
+    gap: 50px;
+  }
+  ion-icon {
+    font-size: 30px;
+    padding-top: 15px;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-items: center;
+    justify-items: center;
+    align-items: center;
+    color: rgb(0, 0, 0)
+  }
+  .icon-login{
+    border-radius: 20px;
+    background-color: rgb(242, 242, 242);
+    border: none;
+  }
+  .icon-login:hover{
+    border-radius: 20px;
+    background-color: rgb(173, 173, 173);
+    border: none;
+    box-shadow: #bdbebf 10px 6px 20px;
+    transition: 1s;
+  
+  }
+  
+  
+  .form-control {
+    transition: border-color 0.5s ease; /* Tạo hiệu ứng chuyển đổi cho màu viền */
+    border-color: rgba(0, 0, 0, 0.1); /* Màu viền ban đầu */
+  }
+  
+  .form-control:focus {
+    border-color: #e25f5f; /* Màu viền khi được chọn */
+    box-shadow: none; /* Loại bỏ hiệu ứng bóng đổ */
+  }
+  .form-control {
+    font-family: Serif;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .form-control:focus {
+    font-family: Serif;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .brand-text {
+    font-size: 40px;
+  }
+  
+  /* Các class để xác định màu cho mỗi chữ */
+  .brand-text span:nth-child(1) {
+    animation: changeColor3 5s infinite; /* Animation cho chữ thứ nhất */
+  }
+  
+  .brand-text span:nth-child(2) {
+    animation: changeColor3 5.2s infinite; 
+  }
+  .brand-text span:nth-child(3) {
+    animation: changeColor3 5.4s infinite; 
+  }
+  .brand-text span:nth-child(4) {
+    animation: changeColor3 5.6s infinite; 
+  }
+  .brand-text span:nth-child(5) {
+    animation: changeColor3 5.6s infinite; 
+  }
+  .brand-text span:nth-child(6) {
+    animation: changeColor3 5.8s infinite; 
+  }
+  .brand-text span:nth-child(7) {
+    animation: changeColor3 6.0s infinite; 
+  }
+  .brand-text span:nth-child(8) {
+    animation: changeColor3 6.2s infinite; 
+  }
+  /* Các animation cho mỗi chữ */
+  
+  @keyframes changeColor3 {
+    0% { color: pink; }
+    16.666% { color: red; }
+    33.333% { color: orange; }
+    50% { color: yellow; }
+    66.666% { color: green; }
+    83.333% { color: rgb(145, 211, 46); }
+    100% { color: rgb(35, 168, 201); }
+  }
+  
+  
+  .nav-home{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+  
+    position: fixed; /* Định vị thanh điều hướng cố định */
+    top: 0; /* Đặt vị trí ở trên cùng của trang */
+    width: 100%; /* Chiều rộng của thanh điều hướng */
+    background-color: white; /* Màu nền của thanh điều hướng */
+    z-index: 1000; /* Z-index để đảm bảo thanh điều hướng hiển thị trên mọi thứ khác */
+    padding: 10px; /* Khoảng cách nội dung từ lề */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Hiệu ứng bóng đổ */
+  }
+  
+  .logo-text img{
+    width: 34px;
+  }
+  .logo-text{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;
+  }
+  .link-home{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  .link-home a{
+    text-decoration: none;
+  }
+  .link-text-home{
+    padding: 10px;
+    border-radius: 30px;
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none; 
+    color: #000;
+  }
+  .logout-home{
+    background-color: #fff;
+    color: #000;
+  }
+  ion-icon {
+    font-size: 25px;
+    color: #000;
+    --ionicon-stroke-width: 46px; 
+  }
+  .active {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px; 
+    padding: 5px 10px; 
+  }
+  .Btn2 {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+  
+  .BG2 {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all .3s;
+  }
+  
+  .Btn2:hover .BG2 {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  
+  .Btn2:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+    backdrop-filter: blur(4px);
+  }
+  
